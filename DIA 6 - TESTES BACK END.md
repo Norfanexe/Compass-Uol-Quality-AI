@@ -32,7 +32,7 @@ Para resolver esse problema, temos os testes de integração, que testam algumas
 - Mais complicados (de fazer e manter) e demorados que os testes de unidade, por testarem uma funcionalidade inteira (muitas vezes com persistência de dados);
 - Bem mais simples (de fazer e manter) e rápidos que os testes de ponta a ponta, por testarem uma única funcionalidade de cada vez, sem precisar subir a aplicação inteira.
  
-# 3 - Pirâmide de teste de mike Cohn
+# 2 - Pirâmide de teste de mike Cohn
 
 A pirâmide de teste de Mike Cohn é uma abordagem clássica para estruturar testes de software, composta por três camadas principais:
 
