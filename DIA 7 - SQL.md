@@ -17,16 +17,19 @@
    ```sql
    SELECT * FROM usuarios WHERE nome = 'Bruce Wayne';
    ```
+![SQL_3](/uploads/a626e408f3b6dd492a2507d79ba5a827/SQL_3.png)
 
 4. **Encontrar o usuário com o e-mail "ghost_silva@fantasma.com":**
    ```sql
    SELECT * FROM usuarios WHERE email = 'ghost_silva@fantasma.com';
    ```
+![SQL_4](/uploads/7a2f548d3f6b532584160302ba0597db/SQL_4.png)
 
 5. **Deletar o usuário com o e-mail "peterparker@marvel.com":**
    ```sql
    DELETE FROM usuarios WHERE email = 'peterparker@marvel.com';
    ```
+![SQL_5](/uploads/a03af20da2fc6988b628c9c255be2822/SQL_5.png)
 
 ### Tabela `produtos`
 
