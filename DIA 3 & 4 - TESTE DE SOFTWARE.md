@@ -138,3 +138,48 @@ Garante que o software estará sempre disponível para uso, com ou sem bugs, que
 ### E (Eficiência no Desempenho)
 
 A velocidade de entrega e devolutiva de informações dentro da ferramenta é fundamental para propor dinamismo e evitar a perda de clientes devido a lentidões e travamentos. A avaliação pode ocorrer em relação ao tempo de resposta de uma ação, aos recursos consumidos e à capacidade da ferramenta em eventos de grande demanda.
+
+## M (Manutenibilidade)
+
+Facilidade de manutenção e atualizações de melhoria ao software. Neste processo incluímos:
+- Organização dos módulos
+- Facilidade de reuso
+- Facilidade em analisar
+- Garantir modificabilidade
+- Garantir testabilidade
+
+## P (Portabilidade)
+
+Capacidade de um software funcionar em diferentes ambientes, como sistemas operacionais, navegadores, dispositivos móveis, TVs e consoles de videogame. É crucial devido à diversidade de dispositivos e plataformas usadas por empresas e indivíduos atualmente. Se divide em três subcaracterísticas principais:
+
+- **Adaptabilidade**: Facilidade do software em se ajustar a novos ambientes com mínima intervenção humana.
+
+- **Instalabilidade**: Facilidade de instalar e desinstalar o software. Isso inclui não apenas a instalação em computadores e smartphones, mas também a configuração e publicação de recursos em ambientes de nuvem e datacenters.
+
+- **Substituibilidade**: Capacidade de substituir um software antigo por um novo, garantindo que o novo software atenda ou supere as funcionalidades do anterior.
+
+## S (Segurança)
+Envolve medidas para proteger o software contra invasões, manipulações e roubo de dados.
+
+- **Confidencialidade**: Garante que apenas pessoas autorizadas possam acessar informações específicas. Por exemplo, em uma loja, apenas o vendedor e seu gerente podem acessar os dados dos clientes.
+
+- **Integridade**: Assegura que somente pessoas autorizadas possam modificar informações e que todas as alterações sejam registradas, indicando quem fez a mudança e quando, para evitar fraudes.
+
+- **Não Repúdio**: Garante que nenhuma das partes envolvidas em uma transação possa negar sua participação posteriormente. Isso é feito através de métodos como senhas, biometria e dados de localização.
+
+- **Responsabilidade**: Permite rastrear e auditar as ações dos usuários no sistema, registrando detalhes como horário de acesso, IP e dispositivo utilizado, essencial para aplicações financeiras e legais.
+
+- **Autenticidade**: Assegura que as transações são realizadas pela pessoa correta, utilizando métodos de autenticação como senhas e biometria.
+
+## Testes Manuais x Testes Automatizados
+
+### Testes de Regressão Automatizados
+- Resultados visíveis para todos os membros.
+
+- Podem ser contínuos ao longo da iteração.
+
+- Abrangem maior quantidade de funcionalidades possíveis (histórias de usuários de iterações anteriores).
+
+- Uma boa cobertura de testes de regressão automatizados ajuda no desenvolvimento e testes nos sistemas integrados.
+
+- Testes automatizados de regressão liberam os testes manuais para se concentrarem em novas funcionalidades, mudanças implementadas e testes de confirmação.

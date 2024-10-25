@@ -169,7 +169,60 @@ Executar os testes de acordo com o cronograma de execução, desde a execução 
 - Verificar se todos os relatórios de defeitos estão fechados
 - Analisar lições aprendidas
 - Melhorar a maturidade dos processos
+ 
+## Psicologia do Teste
 
+Desenvolvimento de software envolve pessoas, e a psicologia humana tem efeitos positivos nos testes de software.
+
+Um bom testador deve ter respeito, sensibilidade e atenção com os outros membros da equipe, especialmente ao fornecer feedbacks ou relatar falhas ocorridas.
+
+### Nesta conversa, discutimos:
+
+#### Comparação de Métodos
+- Análise dos documentos e comparação entre o método ágil e o método tradicional.
+- Principais fatores do método ágil no apoio ao desenvolvimento e na entrega de resultados ao cliente.
+
+#### Exemplos Práticos e Contexto Pessoal
+- Utilização de exemplos do contexto vivenciado pelos participantes para ilustrar pontos discutidos.
+- Importância de se colocar no lugar de usuários e clientes.
+
+#### Visão Geral e Qualidade
+- Manter uma visão geral do projeto e compreensão das posições dos envolvidos.
+- Importância da excelência e da busca contínua por melhorias.
+
+#### Erros e Bugs
+- Diferença entre erros e bugs.
+- Importância de identificar a causa raiz dos bugs e evitar retrabalho desnecessário.
+
+#### Testes e Princípios de Software
+- Inviabilidade de testes exaustivos e a necessidade de uma abordagem equilibrada.
+- Princípio de Pareto e a concentração de problemas em áreas específicas do código.
+- Evolução dos testes junto com o desenvolvimento do software.
+
+#### Desafios do QA
+- Organização e reconhecimento da estrutura do método ágil.
+- Responsabilidade ao testar o conteúdo recebido dos desenvolvedores.
+- Necessidade de devolver resultados coerentes e bem fundamentados.
+
+### Princípios de Testes e Desafios de QA
+- A importância de identificar problemas de produto, não apenas de código.
+- Desafios na comunicação entre QA e desenvolvedores para garantir que ambos entendam a perspectiva do produto e do código.
+- Necessidade de feedback construtivo e produtivo para colaborar com os desenvolvedores, evitando a criação de polaridades.
+
+### Reconhecendo Desafios e Adaptação
+- A importância de reconhecer desafios futuros na área de QA.
+- Necessidade de organização e adaptação às metodologias de trabalho das diferentes empresas.
+- Importância de buscar formas de melhorar processos e produtividade.
+
+### Comparação de Métodos Tradicionais e Ágeis
+- Experiências passadas com métodos tradicionais versus a flexibilidade do método ágil.
+- A importância da documentação extensa no método tradicional e a capacidade de adaptação do método ágil frente a imprevistos.
+
+### Interação e Comunicação
+- A importância da interação e comunicação eficazes entre QA, desenvolvedores e clientes.
+- Necessidade de entender o papel de cada membro da equipe e trazer respostas que beneficiem o time sem criar atritos.
+- Saber com quem tirar dúvidas e quando é apropriado fazer perguntas para obter a informação necessária.
+ 
 # Dinâmica em grupo - Como gerar qualidade nos projetos?
 
 ## Análise e Comparação

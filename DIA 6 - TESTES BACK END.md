@@ -4,7 +4,9 @@
 * 2 - Pirâmide de testes
 * 3 - Pirâmide de teste de mike Cohn
 
-# 1 = xxxxxxxxxxxxxxxx
+# 1 = Fundamentos de teste back end
+
+
 
 # 2 - Pirâmide de testes
 
