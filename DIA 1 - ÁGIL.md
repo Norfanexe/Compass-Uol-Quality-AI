@@ -15,13 +15,19 @@ Desde anotações em bloco de notas, até mesmo agendas digitais, a organizaçã
 
 1. **Notion**
 
+![DIA_1_-_1_-_NOTION](/uploads/ae0fae31a5ad371bf6fc5ffe602dfe53/DIA_1_-_1_-_NOTION.jpeg)
+
 - Notion é um aplicativo da web freemium para produtividade e anotações desenvolvido pela Notion Labs Inc. Ele oferece ferramentas organizacionais, incluindo gerenciamento de tarefas, rastreamento de projetos, listas de tarefas e marcadores . Recursos off-line adicionais são oferecidos por aplicativos de desktop e móveis disponíveis para Windows, macOS, Android e iOS . Os usuários podem criar modelos personalizados, incorporar vídeos e conteúdo da web e colaborar com outras pessoas em tempo real.
 
 2. **Microsoft OneNote**
 
+![DIA_1_-_2_-_ONENOTEjpeg](/uploads/aa81ace42d218585eadceefb2ebac845/DIA_1_-_2_-_ONENOTEjpeg.jpeg)
+
 - O Microsoft OneNote é um programa de computador para o recolhimento de informação de forma livre e colaboração multiusuário. Ele recolhe as notas do usuário (manuscritas ou digitadas), desenhos, recortes de tela e comentários de áudio. As notas podem ser compartilhadas com outros usuários do OneNote através da internet ou por uma rede.
 
 3. **Obsidian**
+
+![DIA_1_-_3_-_OBSIDIAN](/uploads/394b74a7a767e1d8002fd7b09afebec4/DIA_1_-_3_-_OBSIDIAN.jpeg)
 
 - Obsidian é um aplicativo de anotações em arquivos que utilizam a linguagem Markdown e se destinam à formação de uma base pessoal de conhecimentos. Ele permite que os usuários façam links internos entre anotações e depois visualizem as conexões como um gráfico. Ele é projetado para ajudar os usuários a organizar e estruturar pensamento e conhecimentos de maneira flexível e não linear. O software é gratuito para uso pessoal, com licenças comerciais disponíveis mediante pagamento.
 
@@ -31,6 +37,8 @@ A Matriz de Eisenhower é uma ferramenta de gestão do tempo que ajuda a prioriz
 a matriz é representada em um plano cartesiano e categoriza as atividades em quatro quadrantes:
 
 ## Quadrantes da Matriz de Eisenhower
+
+![DIA_2_-_1_-_MATRIZ](/uploads/8432505579a3097ae795e23d83a56a77/DIA_2_-_1_-_MATRIZ.png)
 
 1. **Importante e Urgente**
 
@@ -69,7 +77,7 @@ a matriz é representada em um plano cartesiano e categoriza as atividades em qu
 
 * Criar um arquivo `README.md`
 
-* Em caráter de exemplo, escreva algo para salvar nessa primeira versão do `README.md`, conforme exemplo:
+* Em caráter de exemplo, escreva algo para salvar nessa primeira versão do `README.md.
 
 * Salve o arquivo
 
