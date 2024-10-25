@@ -31,7 +31,7 @@ Desde anotações em bloco de notas, até mesmo agendas digitais, a organizaçã
 
 - Obsidian é um aplicativo de anotações em arquivos que utilizam a linguagem Markdown e se destinam à formação de uma base pessoal de conhecimentos. Ele permite que os usuários façam links internos entre anotações e depois visualizem as conexões como um gráfico. Ele é projetado para ajudar os usuários a organizar e estruturar pensamento e conhecimentos de maneira flexível e não linear. O software é gratuito para uso pessoal, com licenças comerciais disponíveis mediante pagamento.
 
-## 2 - Matriz de Eisenhower
+## Matriz de Eisenhower
 
 A Matriz de Eisenhower é uma ferramenta de gestão do tempo que ajuda a priorizar tarefas com base em dois critérios: urgência e importância.
 a matriz é representada em um plano cartesiano e categoriza as atividades em quatro quadrantes:
@@ -56,7 +56,7 @@ a matriz é representada em um plano cartesiano e categoriza as atividades em qu
 
    - Tarefas que podem ser evitadas ou realizadas apenas quando todas as outras tarefas mais importantes forem concluídas.
 
-# 3 - Git e Gitlab
+# 2 - Git e Gitlab
 
 ## Requisitos
 
@@ -221,7 +221,7 @@ git log
 ```
 Exemplo: Mostra o histórico de commits do repositório.
 
-## 3 - README
+# 3 - README
 
 README é um documento que fornece informações importantes sobre um projeto, escrito em Markdown (.md)
 
