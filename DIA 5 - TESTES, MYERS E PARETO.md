@@ -225,6 +225,8 @@ Um bom testador deve ter respeito, sensibilidade e atenção com os outros membr
  
 # Dinâmica em grupo - Como gerar qualidade nos projetos?
 
+- Realizamos em equipe uma dinâmica abordando os principais pontos que um profissional de QA deve aprender e se desenvolver para ser um profissional efetivamente profissional, Os principais pontos que destacamos, de forma geral:
+
 ## Análise e Comparação
 Análise dos documentos e comparação entre o método ágil e o método tradicional, destacando como o método ágil apoia o desenvolvimento e a entrega de resultados ao cliente.
 
