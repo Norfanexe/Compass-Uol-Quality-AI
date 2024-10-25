@@ -5,6 +5,7 @@
    ```sql
    SELECT COUNT(*) FROM usuarios;
    ```
+! SQL 1
 
 2. **Encontrar o usuário com o id 10:**
    ```sql
