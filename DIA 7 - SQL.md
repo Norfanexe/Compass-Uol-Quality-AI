@@ -5,12 +5,13 @@
    ```sql
    SELECT COUNT(*) FROM usuarios;
    ```
-! SQL 1
+![SQL_1](/uploads/618e48e167c6af1a4dee13c65af81d02/SQL_1.png)
 
 2. **Encontrar o usuário com o id 10:**
    ```sql
    SELECT * FROM usuarios WHERE id = 10;
    ```
+![SQL_2](/uploads/29517813793191eb07b147b9613ff2b8/SQL_2.png)
 
 3. **Encontrar o usuário com o nome "Bruce Wayne":**
    ```sql
