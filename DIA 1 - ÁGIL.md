@@ -1,4 +1,4 @@
-# DIA 1 - ÁGIL
+    # DIA 1 - ÁGIL
 
 ## CONTEÚDO
 
@@ -56,7 +56,7 @@ a matriz é representada em um plano cartesiano e categoriza as atividades em qu
 
    - Tarefas que podem ser evitadas ou realizadas apenas quando todas as outras tarefas mais importantes forem concluídas.
 
-# 2 - Git e Gitlab
+# 3 - Git e Gitlab
 
 ## Requisitos
 
