@@ -6,26 +6,27 @@
 * 2 - Definition of Ready (DoR)
 * 3 - API"s REST
 * 4 - Conceitos HTTP, API REST & JSON
+* 5 - Estrutura para reporte de bugs
 
 # 1 - User Stories & Issues
 
-# Utilização de Boards, Issues e Labels
+Utilização de Boards, Issues e Labels
 
-## 2.1 Boards (Quadros)
-**Definição**: Quadros visuais para organizar e acompanhar o progresso do projeto.
+## Boards (Quadros)
+**Definição**: Quadros visuais para organizar e acompanhar o progresso do projeto de um projeto.
 
-**Como usar**: Crie colunas para diferentes estágios do desenvolvimento (ex: To Do, In Progress, Done).
+**Como usar**: Criar colunas para diferentes estágios do desenvolvimento (ex: To Do, In Progress, Done).
 
 **Exemplo**: Um board para um sprint com colunas "Backlog", "Em Desenvolvimento", "Em Teste" e "Concluído".
 
-## 2.2 Issues (Tarefas)
+## Issues (Tarefas)
 **Definição**: Unidades de trabalho que representam tarefas, bugs ou melhorias.
 
-**Como usar**: Crie issues detalhadas com descrição, responsável e prazo.
+**Como usar**: Criar issues detalhadas com descrição, responsável e prazo.
 
 **Exemplo**: Issue "Implementar login de usuário" com descrição dos requisitos e critérios de aceitação.
 
-## 2.3 Labels (Etiquetas)
+## Labels (Etiquetas)
 **Definição**: Marcadores para categorizar e priorizar issues.
 
 **Como usar**: Crie labels para prioridade, tipo de tarefa ou componente do sistema.
@@ -41,29 +42,17 @@
 
 ## Tópicos Avançados
 
-### 4.1 Integração de TO-DOs na EPIC
+### Integração de TO-DOs na EPIC
 **Definição**: EPICs são grandes unidades de trabalho que podem conter várias issues relacionadas.
 
 **Como usar**: Crie uma EPIC para um recurso principal e adicione issues menores como TO-DOs.
 
 **Exemplo**: EPIC "Implementação de Sistema de Pagamento" com TO-DOs para diferentes etapas do processo.
 
-### 4.2 Armazenamento de Documentos do Sistema
+### Armazenamento de Documentos do Sistema
 **Como usar**: Utilize o repositório do GitLab para armazenar documentação junto com o código.
 
 **Exemplo**: Pasta "docs" no repositório contendo arquivos markdown com especificações e guias.
-
-## Conteúdo Relacionado
-- **Relacionar issues**: Aprenda a criar dependências entre tarefas para melhor planejamento.
-- **Trabalhar com milestones**: Use marcos para agrupar issues e acompanhar o progresso geral.
-- **Estimar tempo nas tarefas**: Adicione estimativas de tempo às issues para melhor previsibilidade do projeto.
-
-## Melhores Práticas
-- Mantenha as issues atualizadas e mova-as nos boards conforme o progresso.
-- Use labels de forma consistente para facilitar a filtragem e organização.
-- Encoraje a equipe a fornecer feedback e atualizar o status das tarefas regularmente.
-- Revise e ajuste seu processo de gerenciamento de projetos periodicamente para otimizar a eficiência.
-
 
 # 2 -  Definition of Ready (DoR)
 
@@ -75,16 +64,14 @@
 **Aplicação**: São pré-requisitos de um backlog para iniciar o desenvolvimento.
 
 ## Importância do DoR
-Garante a qualidade de diversos elementos do projeto:
+1 - Garante a qualidade de diversos elementos do projeto:
 - História
 - Épico
 - Tarefa
 - Sprint
 - Produto
 
-Assegura que o trabalho possa ser iniciado.
-
-Aplicável em diferentes metodologias ágeis:
+2 - Assegura que o trabalho possa ser iniciado, aplicável em diferentes metodologias ágeis:
 - Scrum
 - Kanban
 - Outras
@@ -97,11 +84,6 @@ Aplicável em diferentes metodologias ágeis:
 - Ambientes de trabalho necessários
 - Permissões e aprovações necessárias
 
-## Exemplos Práticos de DoR
-Exemplos de critérios de DoR para diferentes contextos:
-- Equipes de Front-End
-- Produtos como Open Banking
-
 ## Responsabilidades no DoR
 **Definição do DoR**: Responsabilidade de todo o time.
 
@@ -111,16 +93,7 @@ Exemplos de critérios de DoR para diferentes contextos:
 - Tech Lead
 - Product Owner
 
-## Benefícios do DoR
-- Evita bloqueios no desenvolvimento
-- Ajuda a cumprir prazos
-- Motiva o time
-- Reduz o Lead Time
-- Reduz o time-to-market
-
 # 3 - API's REST
-
-# APIs REST
 
 ## Definição
 Uma API REST (Representational State Transfer) é um estilo arquitetural para criar serviços web que permitem a comunicação entre diferentes sistemas.
@@ -184,3 +157,65 @@ Os grupos mais importantes e frequentemente utilizados são:
 - **2xx: Sucesso**: Indica que a solicitação foi bem-sucedida. O código 200 (OK) é o mais comum.
 - **4xx: Erro do Cliente**: Indica que houve um problema com a solicitação do cliente. O código 404 (Not Found) é um dos mais frequentes.
 - **5xx: Erro do Servidor**: Indica que houve um problema no servidor ao processar a solicitação. O código 500 (Internal Server Error) é bastante comum.
+
+# 4 - Conceitos HTTP, API REST & JSON
+
+# Documentação de Conceitos: Microssserviços, APIs, HTTP e REST
+
+## 1. Microssserviços x Monolito
+
+### Monolítico
+**Vantagens**:
+- Fácil de entender
+- Curva de aprendizado menor
+
+**Desvantagens**:
+- Escalabilidade limitada
+- Dependência entre componentes
+
+### Microssserviços
+**Vantagens**:
+- Melhor manutenção
+- Escalabilidade
+
+**Desvantagens**:
+- Complexidade adicional
+- Necessidade de entendimento da arquitetura
+
+## 2. Introdução a APIs
+
+### Conceito
+Refere-se a serviços que são uma forma de integrar sistemas, possibilitando benefícios como a segurança dos dados, facilidade no intercâmbio entre informações com diferentes linguagens de programação e a monetização de acessos.
+
+### Vantagens
+- **Redução de Custos**: Não necessita de muitas aplicações para se conectar com outros serviços, o que melhora a eficiência do serviço.
+- **Segurança**: Permite que apenas informações específicas sejam acessadas pelos usuários, usando de API keys e tokens para facilitar esse controle.
+- **Melhoria na Comunicação**: Reforça e padroniza a maneira de comunicação dentro da empresa, melhorando as estratégias de desenvolvimento.
+- **Volume de Dados**: Consegue acessar somente informações necessárias entre aplicações, restringindo as que não têm utilidade.
+- **Controle de Acessos**: Também melhora a segurança possibilitando identificar todos os acessos da aplicação.
+
+## 3. Introdução a HTTP
+
+### Conceito
+É um protocolo usado para obter recursos, como por exemplo documentos HTML que vemos e utilizamos diariamente na WEB e além disso servem também para intermediar a comunicação com APIs.
+
+## 4. Estrutura de Pedido e Resposta
+
+### Requests
+São criadas pelo cliente (acesso a um Website, chamada para uma API).
+
+### Responses
+Retorno do servidor, acompanhadas de status code e informações solicitadas (json).
+
+### HTTP e HTTPS
+- **HTTP**: Protocolo baseado em texto.
+- **HTTPS**: Garante a segurança das informações através de chaves.
+
+## 5. REST x RESTful
+
+### REST
+Estilo de arquitetura que define padrões que facilitam a comunicação entre sistemas via Web, permite que o cliente e o servidor sejam implementados independentemente, sem a necessidade que um tenha conhecimento da implementação do outro. Usa o protocolo HTTP e é baseado em contrato.
+
+### RESTful
+Possui os mesmos princípios de REST. A diferença é que a API implementada precisa estar de acordo com todas as regras e restrições definidas para a construção de APIs REST. Em resumo, a API precisa ter um grau de maturidade alto para cumprir todos os critérios de uma API REST definidos por Roy Fielding.
+
