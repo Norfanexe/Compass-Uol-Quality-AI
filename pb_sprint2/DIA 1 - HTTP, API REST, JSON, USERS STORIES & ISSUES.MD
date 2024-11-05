@@ -11,6 +11,7 @@
 # 1 - Gerenciamento pelo git (User Stories & Issues)
 
 ## Boards (Quadros)
+
 **Definição**: Quadros visuais para organizar e acompanhar o progresso do projeto de um projeto.
 
 **Como usar**: Criar colunas para diferentes estágios do desenvolvimento (ex: To Do, In Progress, Done).
@@ -55,11 +56,12 @@
 
 ## Importância do DoR
 1 - Garante a qualidade de diversos elementos do projeto:
-- História
-- Épico
-- Tarefa
-- Sprint
-- Produto
+
+- História: Garante que a história esteja bem definida, com critérios claros e detalhados, permitindo que a equipe de desenvolvimento entenda exatamente o que precisa ser feito.
+- Épico: Garante que o épico esteja bem estruturado e dividido em histórias menores e gerenciáveis. Isso facilita o planejamento e a execução do trabalho.
+- Tarefa: Garante que cada tarefa esteja claramente definida e tenha todos os recursos e informações necessários para ser concluída.
+- Sprint: Garante que todas as histórias e tarefas planejadas para a sprint estejam prontas para serem trabalhadas, evitando bloqueios e atrasos.
+- Produto: Garante que todos os aspectos do produto estejam prontos para serem desenvolvidos e entregues
 
 2 - Assegura que o trabalho possa ser iniciado, aplicável em diferentes metodologias ágeis:
 - Scrum
@@ -211,16 +213,16 @@ Possui os mesmos princípios de REST. A diferença é que a API implementada pre
 
 # 5 - Estrutura para reporte de bugs
 
-# Título do Bug 
-<!-- título claro e conciso que descreva o problema --> 
+## Título do Bug 
+título claro e conciso que descreva o problema
 
 ## Resumo 
 
-<!-- descrição resumida do problema encontrado --> 
+descrição resumida do problema encontrado
 
 ## Passos para Reproduzir 
 
-<!-- Lista detalhada dos passos necessários para reproduzir o bug --> 
+Lista detalhada dos passos necessários para reproduzir o bug
 
 1. [Passo 1] 
 
@@ -230,15 +232,15 @@ Possui os mesmos princípios de REST. A diferença é que a API implementada pre
 
 ## Resultado Esperado 
 
-<!-- O que deveria acontecer se o sistema estivesse ok --> 
+O que deveria acontecer se o sistema estivesse ok
 
 ## Resultado Obtido 
 
-<!-- O que realmente aconteceu --> 
+O que realmente aconteceu
 
 ## Ambiente 
 
-<!-- Informações sobre o ambiente onde o bug foi encontrado (sistema operacional, navegador, versão da aplicação, etc.). --> 
+Informações sobre o ambiente onde o bug foi encontrado (sistema operacional, navegador, versão da aplicação, etc.).
 
 - **Sistema Operacional**: [ex: Windows 10] 
 
@@ -248,6 +250,6 @@ Possui os mesmos princípios de REST. A diferença é que a API implementada pre
 
 ## Anexos 
 
-<!-- Capturas de tela, logs ou qualquer outro arquivo que ajude a ilustrar o problema. --> 
+Capturas de tela, logs ou qualquer outro arquivo que ajude a ilustrar o problema.
 
 [Adicione capturas de tela, logs, etc.] 
