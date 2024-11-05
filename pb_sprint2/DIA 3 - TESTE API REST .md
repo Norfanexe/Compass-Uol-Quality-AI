@@ -27,7 +27,6 @@ Existem várias estratégias para realizar testes funcionais em APIs REST, inclu
 - **Validação de Respostas da API**: Verificar se as respostas da API estão corretas e conforme o esperado, incluindo códigos de status HTTP, headers e corpo da resposta.
 
 ## 4. Melhores Práticas
-Para garantir a eficácia dos testes de API, siga estas melhores práticas:
 
 - **Estruturação dos Testes**: Organize os testes de forma clara e lógica, agrupando-os por funcionalidade ou endpoint.
 - **Cobertura de Testes**: Garanta que todos os cenários possíveis sejam cobertos pelos testes, incluindo casos de sucesso e falha.
