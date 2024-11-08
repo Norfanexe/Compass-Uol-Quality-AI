@@ -10,49 +10,52 @@
 
 # 1 - Gerenciamento pelo git (User Stories & Issues)
 
-## Boards (Quadros)
+### 1. Boards (Quadros)
+- **Definição**: Quadros visuais para organizar e acompanhar o progresso do projeto.
+- **Como usar**: Crie colunas para diferentes estágios do desenvolvimento (ex: To Do, In Progress, Done).
+- **Exemplo**: Um board para um sprint com colunas "Backlog", "Em Desenvolvimento", "Em Teste" e "Concluído".
 
-**Definição**: Quadros visuais para organizar e acompanhar o progresso do projeto de um projeto.
+### 2. Issues (Tarefas)
+- **Definição**: Unidades de trabalho que representam tarefas, bugs ou melhorias.
+- **Como usar**: Crie issues detalhadas com descrição, responsável e prazo.
+- **Exemplo**: Issue "Implementar login de usuário" com descrição dos requisitos e critérios de aceitação.
 
-**Como usar**: Criar colunas para diferentes estágios do desenvolvimento (ex: To Do, In Progress, Done).
-
-**Exemplo**: Um board para um sprint com colunas "Backlog", "Em Desenvolvimento", "Em Teste" e "Concluído", para facilitar a organização das demandas e segmento do projeto.
-
-## Issues (Tarefas)
-**Definição**: Unidades de trabalho que representam tarefas, bugs ou melhorias.
-
-**Como usar**: Criar issues detalhadas com descrição, responsável e prazo.
-
-## Labels (Etiquetas)
-**Definição**: Marcadores para categorizar e priorizar issues.
-
-**Como usar**: Criar labels para prioridade, tipo de tarefa ou componente do sistema.
+### 3. Labels (Etiquetas)
+- **Definição**: Marcadores para categorizar e priorizar issues.
+- **Como usar**: Crie labels para prioridade, tipo de tarefa ou componente do sistema.
+- **Exemplo**: Labels como "Alta Prioridade", "Bug", "Feature", "Frontend", "Backend".
 
 ## Comentários e Feedback
-
-**Importância**: Facilita a comunicação e colaboração entre membros da equipe.
-
-**Como usar**: Adicione comentários relevantes em issues para discutir soluções ou fornecer atualizações.
+- **Importância**: Facilita a comunicação e colaboração entre membros da equipe.
+- **Como usar**: Adicione comentários relevantes em issues para discutir soluções ou fornecer atualizações.
+- **Exemplo**: Comentário em uma issue de bug detalhando os passos para reproduzir o problema.
 
 ## Tópicos Avançados
 
-### 1 - Integração de TO-DOs na EPIC
-**Definição**: EPICs são grandes unidades de trabalho que podem conter várias issues relacionadas.
+### Integração de TO-DOs na EPIC
+- **Definição**: EPICs são grandes unidades de trabalho que podem conter várias issues relacionadas.
+- **Como usar**: Crie uma EPIC para um recurso principal e adicione issues menores como TO-DOs.
+- **Exemplo**: EPIC "Implementação de Sistema de Pagamento" com TO-DOs para diferentes etapas do processo.
 
-**Como usar**: Crie uma EPIC para um recurso principal e adicione issues menores como TO-DOs.
+### Armazenamento de Documentos do Sistema
+- **Como usar**: Utilize o repositório do GitLab para armazenar documentação junto com o código.
+- **Exemplo**: Pasta "docs" no repositório contendo arquivos markdown com especificações e guias.
 
-### 2 - Armazenamento de Documentos do Sistema
-**Como usar**: Utilize o repositório do GitLab para armazenar documentação junto com o código.
+## Conteúdo Relacionado
+- **Relacionar issues**: Aprenda a criar dependências entre tarefas para melhor planejamento.
+- **Trabalhar com milestones**: Use marcos para agrupar issues e acompanhar o progresso geral.
+- **Estimar tempo nas tarefas**: Adicione estimativas de tempo às issues para melhor previsibilidade do projeto.
 
-# 2 -  Definition of Ready (DoR)
+## Melhores Práticas
+- Mantenha as issues atualizadas e mova-as nos boards conforme o progresso.
+- Use labels de forma consistente para facilitar a filtragem e organização.
+- Encoraje a equipe a fornecer feedback e atualizar o status das tarefas regularmente.
+- Revise e ajuste seu processo de gerenciamento de projetos periodicamente para otimizar a eficiência.
 
-## Definição
-
-**DoR** significa "Definição de Pronto" e é uma técnica de qualidade e gestão de risco.
-
-**Função**: Apoia a entrada de uma história para o delivery.
-
-**Aplicação**: São pré-requisitos de um backlog para iniciar o desenvolvimento.
+## Evidências
+- **Impacto**: Descrição do impacto no usuário ou sistema.
+- **Notas Adicionais**: Qualquer informação ou sugestão adicional.
+- **Capturas de tela / Logs de erro / Vídeos**
 
 ## Importância do DoR
 1 - Garante a qualidade de diversos elementos do projeto:
@@ -213,43 +216,29 @@ Possui os mesmos princípios de REST. A diferença é que a API implementada pre
 
 # 5 - Estrutura para reporte de bugs
 
-## Título do Bug 
-título claro e conciso que descreva o problema
+## Título do Bug
+_(Título claro e conciso que descreva o problema)_
 
-## Resumo 
+## Resumo
+_(Descrição resumida do problema encontrado)_
 
-descrição resumida do problema encontrado
+## Passos para Reproduzir
+(Lista detalhada dos passos necessários para reproduzir o bug)
+1. [Passo 1]
+2. [Passo 2]
+3. [Passo 3]
 
-## Passos para Reproduzir 
+## Resultado Esperado
+_(O que deveria acontecer se o sistema estivesse ok)_
 
-Lista detalhada dos passos necessários para reproduzir o bug
+## Resultado Obtido
+_(O que realmente aconteceu)_
 
-1. [Passo 1] 
+## Ambiente
+Informações sobre o ambiente onde o bug foi encontrado:
+- **Sistema Operacional**: [ex: Windows 10]
+- **Navegador**: [ex: Google Chrome]
+- **Versão da Aplicação**: [ex: 1.0.0]
 
-2. [Passo 2] 
-
-3. [Passo 3] 
-
-## Resultado Esperado 
-
-O que deveria acontecer se o sistema estivesse ok
-
-## Resultado Obtido 
-
-O que realmente aconteceu
-
-## Ambiente 
-
-Informações sobre o ambiente onde o bug foi encontrado (sistema operacional, navegador, versão da aplicação, etc.).
-
-- **Sistema Operacional**: [ex: Windows 10] 
-
-- **Navegador**: [ex: Google Chrome] 
-
-- **Versão da Aplicação**: [ex: 1.0.0] 
-
-## Anexos 
-
-Capturas de tela, logs ou qualquer outro arquivo que ajude a ilustrar o problema.
-
-[Adicione capturas de tela, logs, etc.] 
+## Anexos
+[Adicione capturas de tela, logs, etc.]
