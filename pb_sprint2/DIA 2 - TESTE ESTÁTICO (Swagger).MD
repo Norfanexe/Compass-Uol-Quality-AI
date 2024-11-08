@@ -6,7 +6,6 @@
 * 2 - Documentação da API rest (SWAGGER)
 * 3 - APIs Públicas para testes
 
-```markdown
 # Dia 2 - Testes Estáticos (Swagger)
 
 Plataforma colaborativa onde você pode definir APIs usando as especificações **OpenAPI** ou **AsyncAPI** e gerenciar suas APIs ao longo de seu ciclo de vida.
@@ -42,10 +41,6 @@ Especificação para descrever APIs assíncronas. Projetada para definir e docum
 - **Redução de Erros**: Minimiza inconsistências na implementação da API.
 - **Integração Facilitada**: Simplifica a conexão com outras ferramentas e serviços.
 
-Fonte: [Documentação Swagger: Get Started | SwaggerHub Documentation](https://swagger.io/tools/swaggerhub/docs/)
-
----
-
 ## APIs Públicas para Testes
 
 1. **API de Gatos HTTP**
@@ -71,4 +66,3 @@ Fonte: [Documentação Swagger: Get Started | SwaggerHub Documentation](https://
 6. **PokéAPI**
    - **Descrição**: Dados da biblioteca de pokémons.
    - **URL**: [PokéAPI](https://pokeapi.co)
-```
