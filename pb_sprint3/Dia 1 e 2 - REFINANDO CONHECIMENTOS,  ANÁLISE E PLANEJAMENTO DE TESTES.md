@@ -290,8 +290,7 @@ Adquirir ferramentas ou serviços deve ser alinhado com termos contratuais claro
 
 ### Normas e Documentação
 Utilizar normas como a **ISO/IEC/IEEE 29119** padroniza processos de teste, incluindo planos e registros de defeitos, facilitando organização e garantindo conformidade.
- 
- ```markdown
+
 # Planejamento e Requisitos no Desenvolvimento de Projetos
 
 ## 3. Mapa Mental para Planejamento
@@ -375,8 +374,7 @@ A separação entre funcional e não funcional ajuda a:
 - Experimente usar mapas mentais em pequenas atividades para praticar.
 - Explore ferramentas de planejamento para identificar a melhor opção.
 - Sempre personalize para destacar informações essenciais.
- 
- ```markdown
+
 # User Stories e Planejamento Inicial (Pre-Game)
 
 ## 5. User Stories (Histórias de Usuário)
@@ -590,8 +588,6 @@ O **Sprint Backlog** é formado por histórias e tarefas prioritárias do **Prod
 2. **Feedback Rápido:** Facilita ajustes constantes no projeto.
 3. **Melhoria Contínua:** Revisões e retrospectivas promovem aprendizado.
 
-
-```markdown
 # Sprint Backlog: Planejamento e Gestão de Tarefas na Sprint
 
 ## O que é o Sprint Backlog?
