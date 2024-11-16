@@ -228,9 +228,6 @@ Negociações justas fortalecem relações de confiança e criam parcerias durad
 
 # ANÁLISE E PLANEJAMENTO DE TESTES
 
-```markdown
-# ANÁLISE E PLANEJAMENTO DE TESTES
-
 ## 1. Negociando Acordo Flexível e de Valor
 
 ### A Importância do Planejamento em Testes
