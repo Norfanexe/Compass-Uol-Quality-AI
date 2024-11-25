@@ -10,7 +10,7 @@ Documento para o planejamento de testes para a aplicação **API Serverest**. O 
 2. [Objetivos](#objetivos)
 3. [Escopo](#escopo)
 4. [Ferramentas Utilizadas](#ferramentas-utilizadas)
-5. [Linguagens utilizadas] (#linguagens-utilizadas)
+5. [Linguagensutilizadas] (#linguagens-utilizadas)
 6. [Estratégia de Testes](#estratégia-de-testes)
 7. [Planejamento Inicial](#planejamento-inicial)
 8. [Detalhamento dos Testes](#detalhamento-dos-testes)
@@ -63,7 +63,7 @@ Este planejamento é baseado na análise da **API ServeRest** e utiliza como fer
 
 ---
 
-## 6 - Estratégia de Testes
+## 6 - Estratégia adotadas para os Testes
 
 1. **Planejamento Inicial no Postman e Jira**:
    - xxxxxxxxxx
@@ -83,14 +83,37 @@ Este planejamento é baseado na análise da **API ServeRest** e utiliza como fer
 
 ## 7 - Planejamento Inicial
 
-| Rota       | Cenário                       | Critérios de Aceitação                           |
-|------------|-------------------------------|--------------------------------------------------|
-| `/usuarios`| Cadastro de usuário válido    | Retornar status 201 e detalhes do usuário criado |
-| `/usuarios`| Cadastro com dados inválidos  | Retornar status 400 e mensagem de erro clara     |
-| `/login`   | Login com credenciais válidas | Retornar token de autenticação válido            |
-| `/login`   | Login inválido                | Retornar status 401 com mensagem de erro         |
-| `/produtos`| Cadastro de produto válido    | Retornar status 201 e detalhes do produto criado |
-| `/produtos`| Consulta de produto por ID    | Retornar status 200 e detalhes do produto        |
+| Rota        | Cenário                        | Critérios de Aceitação                                |
+|-------------|--------------------------------|-------------------------------------------------------|
+| `/login`    | Login realizado com sucesso    | Retornar status 200 OK e usuário terá acesso          |
+| `/login`    | E-mail válido e senha inválida | Retornar status 401 Unauthorized e usuário sem acesso |
+| `/login`    | E-mail incorreto, senha válida | Retornar status 401 Unauthorized e usuário sem acesso |
+| `/usuarios` | Usuário encontrado             | --------------------------------------------------    |
+| `/usuarios` | Usuário não encontrado         | --------------------------------------------------    |
+| `/usuarios` | Cadastro com sucesso           | --------------------------------------------------    |
+| `/usuarios` | Email já está em uso           | --------------------------------------------------    |
+| `/usuarios` | Registro excluído com sucesso  | --------------------------------------------------    |
+| `/usuarios` | Usuário c/ carrinho cadastrado | --------------------------------------------------    |
+| `/usuarios` | E-mail já cadastrado           | xxxxxxxxxxxxxxxxxxxxxxxxxxx                           |
+| `/usuarios` | Cadastro com sucesso           | xxxxxxxxxxxxxxxxxxxxxxxxxxx                           |
+| `/usuarios` | Alterado com sucesso           | xxxxxxxxxxxxxxxxxxxxxxxxxxx                           |
+| `/produtos` | Lista de produtos              | xxxxxxxxxxxxxxxxxxxxxxxxxxx                           |
+| `/produtos` | Cadastro com sucesso           | xxxxxxxxxxxxxxxxxxxxxxxxxxx                           |
+| `/produtos` | Produto com nome já existente  | xxxxxxxxxxxxxxxxxxxxxxxxxxx                           |
+| `/produtos` | Token ausente / inválido       | xxxxxxxxxxxxxxxxxxxxxxxxxxx                           |
+| `/produtos` | Rota apenas para admins        | xxxxxxxxxxxxxxxxxxxxxxxxxxx                           |
+| `/produtos` | Produto encontrado             | xxxxxxxxxxxxxxxxxxxxxxxxxxx                           |
+| `/produtos` | Produto não encontrado         | xxxxxxxxxxxxxxxxxxxxxxxxxxx                           |
+| `/produtos` | Excluir produto com sucesso    | xxxxxxxxxxxxxxxxxxxxxxxxxxx                           |
+| `/produtos` | Produto faz parte do carrinho  | xxxxxxxxxxxxxxxxxxxxxxxxxxx                           |
+| `/produtos` | Token ausente / inválido       | xxxxxxxxxxxxxxxxxxxxxxxxxxx                           |
+| `/produtos` | Rota apenas para admins        | xxxxxxxxxxxxxxxxxxxxxxxxxxx                           |
+| `/produtos` | Alterado com sucesso           | xxxxxxxxxxxxxxxxxxxxxxxxxxx                           |
+| `/produtos` | Cadastro com sucesso           | xxxxxxxxxxxxxxxxxxxxxxxxxxx                           |
+| `/produtos` | Produto com nome já existente  | xxxxxxxxxxxxxxxxxxxxxxxxxxx                           |
+| `/produtos` | Token ausente / inválido       | xxxxxxxxxxxxxxxxxxxxxxxxxxx                           |
+| `/produtos` | Rota apenas para admins        | xxxxxxxxxxxxxxxxxxxxxxxxxxx                           |
+
 
 ---
 
