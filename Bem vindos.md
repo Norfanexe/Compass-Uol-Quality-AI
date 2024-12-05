@@ -2,6 +2,8 @@
 
 ## Sobre Mim
 
+![AfC_oKZ0DsJgR7C6Gey4EnYiLcHkUKcjPwuRpANzOigCZ_si_4Dlqx_EvEYsqf0](/uploads/c0942cf4b8060fa8384ddb5ffa655b8a/AfC_oKZ0DsJgR7C6Gey4EnYiLcHkUKcjPwuRpANzOigCZ_si_4Dlqx_EvEYsqf0.jpg)
+
 Meu nome é **Rodrigo (Norfan)**, estudante em **Bacharelado em tecnologia da informação** pela **UNIVESP** e atualmente estou estagiando na área de **[Qualidade de Software]**, através da **Compass Uol** e neste repositório, compartilharei todos os meus conhecimetnos obtidos ao longo desta oportunidade. Meu objetivo é documentar minha jornada, compartilhar conhecimentos e aprender continuamente ao longo desse período.
 
 ## O que Estou Estudando no Estágio
