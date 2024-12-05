@@ -73,3 +73,5 @@ Gostaria de expressar minha gratidão às seguintes pessoas que me ajudam diaria
 ---
 
 Obrigado por visitar meu repositório! Espero que o conteúdo aqui seja útil e auxilie nos seus estudos, assim como, estou conseguindo com todo apoio da minha equipe. 🚀
+
+![compass_logo](/uploads/fb31a005fa63f17c9888ccf0d86b1021/compass_logo.PNG)
