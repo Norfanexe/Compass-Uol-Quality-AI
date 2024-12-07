@@ -585,3 +585,32 @@ export default class Calculadora {
 - **Operação de Fatorial**: Calcula o fatorial de `n` utilizando um loop `for`.
  
 - **Observalçao**: No próximo módulo, será aplicado os métodos de teste MOCHA e CHAI para testar este código desenvolvido.
+
+## Tabela de Decisão para a Calculadora
+
+| Condição                                      | Ação Esperada                                      | Resultado Esperado                                |
+|-----------------------------------------------|---------------------------------------------------|--------------------------------------------------|
+| **Método de Soma**                            |                                                   |                                                  |
+| a = 5, b = 8                                  | Calculadora.soma(a, b)                            | 13                                               |
+| a = -5, b = 8                                 | Calculadora.soma(a, b)                            | 3                                                |
+| a = 0, b = 0                                  | Calculadora.soma(a, b)                            | 0                                                |
+| **Método de Subtração**                       |                                                   |                                                  |
+| a = 8, b = 5                                  | Calculadora.subtracao(a, b)                       | 3                                                |
+| a = 5, b = 8                                  | Calculadora.subtracao(a, b)                       | -3                                               |
+| a = 0, b = 0                                  | Calculadora.subtracao(a, b)                       | 0                                                |
+| **Método de Multiplicação**                   |                                                   |                                                  |
+| a = 5, b = 8                                  | Calculadora.multiplicacao(a, b)                   | 40                                               |
+| a = -5, b = 8                                 | Calculadora.multiplicacao(a, b)                   | -40                                              |
+| a = 0, b = 8                                  | Calculadora.multiplicacao(a, b)                   | 0                                                |
+| **Método de Divisão**                         |                                                   |                                                  |
+| a = 40, b = 8                                 | Calculadora.divisao(a, b)                         | 5                                                |
+| a = 40, b = 0                                 | Calculadora.divisao(a, b)                         | Lançar erro "não é permitido divisões por zero"  |
+| a = 0, b = 8                                  | Calculadora.divisao(a, b)                         | 0                                                |
+| **Método de Módulo**                          |                                                   |                                                  |
+| a = 10, b = 3                                 | Calculadora.modulo(a, b)                          | 1                                                |
+| a = 10, b = 0                                 | Calculadora.modulo(a, b)                          | Lançar erro "não é permitido divisões por zero"  |
+| a = 0, b = 3                                  | Calculadora.modulo(a, b)                          | 0                                                |
+| **Método de Fatorial**                        |                                                   |                                                  |
+| n = 5                                         | Calculadora.fatorial(n)                           | 120                                              |
+| n = -1                                        | Calculadora.fatorial(n)                           | Lançar erro "não é permitido calcular o fatorial de um número negativo" |
+| n = 0                                         | Calculadora.fatorial(n)                           | 1                                                |
