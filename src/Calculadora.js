@@ -1,23 +1,44 @@
 // Definição da classe Calculadora
-
-// Exportado classe calculadora no arquivo
+// Exporta a classe Calculadora para uso em outros módulos
 export default class Calculadora {
-    // Método de soma 
+    
+    /**
+     * Método para somar dois números
+     * @param {number} a - Primeiro número
+     * @param {number} b - Segundo número
+     * @returns {number} - Resultado da soma de a e b
+     */
     static soma(a, b) {
         return a + b;
     }
 
-    // Método de subtração
+    /**
+     * Método para subtrair dois números
+     * @param {number} a - Minuendo
+     * @param {number} b - Subtraendo
+     * @returns {number} - Resultado da subtração de b de a
+     */
     static subtracao(a, b) {
         return a - b;
     }
 
-    // Método de multiplicação
+    /**
+     * Método para multiplicar dois números
+     * @param {number} a - Primeiro fator
+     * @param {number} b - Segundo fator
+     * @returns {number} - Resultado da multiplicação de a por b
+     */
     static multiplicacao(a, b) {
         return a * b;
     }
 
-    // Método de divisão
+    /**
+     * Método para dividir dois números
+     * @param {number} a - Dividendo
+     * @param {number} b - Divisor
+     * @returns {number} - Resultado da divisão de a por b
+     * @throws {Error} - Lança um erro se b for igual a zero
+     */
     static divisao(a, b) {
         if (b === 0) {
             throw new Error("não é permitido divisões por zero");
@@ -25,7 +46,13 @@ export default class Calculadora {
         return a / b;
     }
 
-    // Método de módulo
+    /**
+     * Método para calcular o módulo de dois números
+     * @param {number} a - Dividendo
+     * @param {number} b - Divisor
+     * @returns {number} - Resto da divisão de a por b
+     * @throws {Error} - Lança um erro se b for igual a zero
+     */
     static modulo(a, b) {
         if (b === 0) {
             throw new Error("não é permitido divisões por zero");
@@ -37,7 +64,12 @@ export default class Calculadora {
         return resultado;
     }
 
-    // Método de fatorial
+    /**
+     * Método para calcular o fatorial de um número
+     * @param {number} n - Número para calcular o fatorial
+     * @returns {number} - Fatorial de n
+     * @throws {Error} - Lança um erro se n for negativo
+     */
     static fatorial(n) {
         if (n < 0) {
             throw new Error("não é permitido calcular o fatorial de um número negativo");
@@ -49,5 +81,4 @@ export default class Calculadora {
         return resultado;
     }
 }
-
 
