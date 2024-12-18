@@ -1,9 +1,9 @@
 # Inteligência Artificial (A Tecnologia que Está Mudando o Mundo) // Dicionário do Programador
 
-## História da Inteligência Artificial: Origem e evolução do termo
+# História da Inteligência Artificial: Origem e evolução do termo
 **Fonte:** Inteligência Artificial by Hebert Carmelo de Freitas on Prezi
 
-### Principais Contribuições e Pesquisadores
+## Principais Contribuições e Pesquisadores
 **Origem e Desenvolvimento Inicial**
 Pesquisadores como John McCarthy, Marvin Minsky e Herbert A. Simon foram fundamentais para o crescimento da IA nas décadas de 1950 e 1960. John McCarthy cunhou o termo 'inteligência artificial' e coorganizou a famosa conferência de Dartmouth.
 A origem da inteligência artificial remonta à década de 1950, com o trabalho de Alan Turing e o teste que leva seu nome. Durante esse período, computação e lógica formal cruzaram caminhos, estabelecendo as bases para a IA moderna.
@@ -14,7 +14,7 @@ Nos anos 70 e 80, a IA passou por ciclos de otimismo e desilusão, chamados de '
 **O Futuro da Inteligência Artificial**
 As tendências em IA incluem aprendizado profundo, IA explicativa e automação inteligente. As inovações estão em áreas como saúde, transporte autônomo e assistência pessoal, revolucionando a forma como interagimos com a tecnologia.
 
-## Lógica Fuzzy: Primeiros estudos e aplicações
+# Lógica Fuzzy: Primeiros estudos e aplicações
 **Fonte:** Lógica difusa – Wikipédia, a enciclopédia livre
 
 A lógica difusa ou lógica fuzzy é a forma de lógica multivalorada, na qual os valores verdade das variáveis podem ser qualquer número real entre 0 (correspondente ao valor falso) e 1 (correspondente ao valor verdadeiro), diferentemente do que se verifica na lógica booliana (também chamada, às vezes, lógica nítida), segundo a qual os valores lógicos podem ser apenas 0 ou 1.
@@ -52,12 +52,115 @@ Os significados das expressões frio (cold), morno (warm), e quente (hot) são r
 
 **Reconhecimento de Padrões:** A lógica fuzzy é usada para reconhecer padrões em dados, como em sistemas de reconhecimento facial, onde as características faciais podem variar em graus.
 
-## Algoritmos Preditivos: Como são utilizados na IA
+# Algoritmos Preditivos: Como são utilizados na IA
 
-## Redes Neurais: Funcionamento e importância
+## Fonte
+[O que é IA preditiva? | IBM](https://www.ibm.com)
 
-## Grandes Volumes de Dados: Papel dos dados na IA
+## Introdução
+A inteligência artificial (IA) preditiva envolve o uso de análise estatística e aprendizado de máquina (ML) para identificar padrões, antecipar comportamentos e prever eventos futuros. As organizações utilizam a IA preditiva para prever potenciais resultados futuros, causalidades, exposição a riscos e muito mais.
 
+## Análises Preditivas vs. Descritivas vs. Prescritivas
+- **Análises Descritivas**: Ajudam as organizações a entender por que algo aconteceu no passado.
+- **Análises Preditivas**: Ajudam a antecipar o que provavelmente ocorrerá.
+- **Análises Prescritivas**: Recomendam ações que uma organização pode tomar para garantir que esses resultados aconteçam.
+
+## Aplicações da IA Preditiva
+A IA preditiva é amplamente utilizada para obter insights sobre o comportamento do cliente e otimizar a tomada de decisões em diversos setores. Ela pode prever desde a evasão de clientes até interrupções na cadeia de suprimentos e falhas mecânicas, permitindo um planejamento proativo ao produzir previsões confiáveis e precisas.
+
+## Importância dos Dados
+A precisão e o desempenho dos modelos de IA preditiva dependem amplamente da qualidade e quantidade dos dados de treinamento. Práticas rigorosas de governança de dados, limpeza de dados, validação e atualizações consistentes dos conjuntos de dados garantem que os dados utilizados sejam confiáveis, o que, por sua vez, aprimora a precisão dos modelos preditivos.
+
+## Construção de Aplicações de IA Preditiva
+Para construir uma aplicação de IA preditiva, uma empresa deve:
+1. Reunir dados relevantes de várias fontes.
+2. Limpar os dados, definindo valores ausentes, discrepantes ou variáveis irrelevantes.
+3. Dividir os dados em conjuntos de treinamento e teste.
+4. Usar o conjunto de treinamento para treinar o modelo.
+5. Usar o conjunto de teste para avaliar o desempenho do modelo.
+
+A IA preditiva usa análise de big data e deep learning para examinar dados históricos, padrões e tendências. Quanto mais dados forem fornecidos aos algoritmos de aprendizado de máquina, melhores serão as previsões.
+
+## Considerações Éticas
+Vieses em dados ou algoritmos podem levar a resultados injustos ou discriminatórios. As práticas éticas de IA protegem contra impactos prejudiciais e criam confiança entre os usuários e as partes interessadas.
+
+# Redes Neurais: Funcionamento e Importância
+
+## Fonte
+[O que é uma rede neural? – Explicação sobre rede neural artificial – AWS](https://aws.amazon.com/pt/what-is/neural-network/)
+
+## Introdução
+Redes neurais são um método de inteligência artificial (IA) que ensina computadores a processar dados de uma forma inspirada pelo cérebro humano. É um tipo de processo de machine learning (ML), chamado aprendizado profundo, que usa nós ou neurônios interconectados em uma estrutura em camadas, semelhante ao cérebro humano. A rede neural cria um sistema adaptativo que os computadores usam para aprender com os erros e se aprimorar continuamente. As redes neurais artificiais tentam solucionar problemas complicados, como resumir documentos ou reconhecer rostos com grande precisão.
+
+## Funcionamento das Redes Neurais
+Redes neurais podem ajudar os computadores a tomar decisões inteligentes com assistência humana limitada. Isso ocorre porque elas aprendem e modelam relacionamentos entre os dados de entrada e de saída complexos e não lineares. Por exemplo, elas podem realizar as seguintes tarefas:
+- Entender dados não estruturados e fazer observações gerais sem receber treinamento explícito.
+- Reconhecer que duas frases diferentes têm o mesmo significado.
+- Identificar locais e nomes de pessoas.
+
+## Casos de Uso das Redes Neurais
+As redes neurais têm vários casos de uso em diferentes setores, como:
+- Diagnóstico médico feito pela classificação de imagens.
+- Marketing direcionado pela filtragem de mídia social e análise de dados comportamentais.
+- Previsões financeiras feitas pelo processamento de dados históricos de instrumentos financeiros.
+- Previsões de demanda de energia e carga elétrica.
+- Processo e controle de qualidade.
+- Identificação de compostos químicos.
+
+## Aplicações Importantes das Redes Neurais
+
+### Visão Computacional
+A visão computacional é a capacidade dos computadores de extrair informações e insights de imagens e vídeos. Com as redes neurais, os computadores podem distinguir e reconhecer imagens de maneira semelhante aos humanos. A visão computacional tem várias aplicações, como:
+- Reconhecimento visual em carros autônomos para que eles possam reconhecer as placas de trânsito e os outros usuários das vias.
+- Moderação de conteúdo para remover automaticamente conteúdos inapropriados ou perigosos de arquivos de vídeos e imagens.
+- Reconhecimento facial para identificar rostos e reconhecer atributos como olhos abertos, óculos e barba.
+- Rótulo de imagens para identificar logotipos de marcas, roupas, equipamentos de segurança e outros detalhes de imagens.
+
+### Reconhecimento de Voz
+As redes neurais podem analisar a fala humana mesmo existindo diversos padrões de fala, tom, altura, idioma e sotaque. Assistentes virtuais como a Amazon Alexa e software de transcrição automática usam o reconhecimento de fala para realizar tarefas como:
+- Ajudar atendentes de centrais de atendimento e classificar chamadas automaticamente.
+- Converter conversas clínicas em documentação em tempo real.
+- Criar legendas de vídeos e gravações de reuniões com precisão para permitir maior alcance do conteúdo.
+
+### Processamento de Linguagem Natural
+Processamento de linguagem natural (PLN) é a capacidade de processar textos criados por seres humanos. As redes neurais ajudam os computadores a coletar insights e significados de documentos e dados de texto. O PLN tem vários casos de uso, incluindo as seguintes funções:
+- Atendentes virtuais automatizados e chatbots.
+- Organização e classificação automática de dados gravados.
+- Análise da inteligência comercial de documentos longos, como e-mails e formulários.
+- Indexação de frases essenciais que indicam sentimentos, como comentários positivos e negativos em mídias sociais.
+- Resumo de documentos e geração de artigos para um determinado tópico.
+
+### Mecanismos de Recomendação
+As redes neurais podem monitorar as atividades do usuário e desenvolver recomendações personalizadas. Também são capazes de analisar todo o comportamento do usuário e descobrir novos produtos ou serviços que podem interessar um usuário específico. Por exemplo, a Curalate, uma startup sediada na Filadélfia, ajuda as marcas a converter publicações de mídias sociais em vendas. As marcas usam o serviço de marcação inteligente de produtos (IPT) da Curalate para automatizar a coleta e curadoria de conteúdo social gerado pelo usuário. A IPT usa as redes neurais para localizar e recomendar automaticamente os produtos relevantes com base na atividade de mídia social do usuário. Os consumidores não precisam buscar em catálogos online para encontrar um produto específico de uma imagem de mídia social. Ao invés disso, podem usar a marcação automática de produtos da Curalate para comprar o produto com facilidade.
+
+# Grandes Volumes de Dados: Papel dos Dados na IA
+
+## Fonte
+[Os desafios de gerenciar grandes quantidades de dados: o papel estratégico da Inteligência Artificial](https://www.ibm.com)
+
+## Desafios de Gerenciar Grandes Quantidades de Dados
+- **Volume Massivo de Dados**: O crescimento exponencial dos dados torna o armazenamento, processamento e análise uma tarefa monumental.
+- **Variedade de Dados**: Dados em diferentes formatos (estruturados, semiestruturados e não estruturados) dificultam a integração e análise.
+- **Velocidade de Geração de Dados**: A necessidade de processar dados em tempo real exige infraestruturas avançadas.
+- **Veracidade dos Dados**: Garantir a qualidade dos dados é essencial para decisões precisas.
+- **Integração de Fontes Diversas**: Conectar dados de diferentes fontes pode ser complicado e afetar a precisão das análises.
+
+## Desafios no Gerenciamento de Market Intelligence (MI)
+- **Previsão e Simulação de Cenários**: A complexidade de integrar diferentes fontes e interpretar dados variados compromete a criação de simulações precisas.
+- **Pressão por Resultados Estratégicos**: A liderança exige insights que impactem diretamente o desempenho dos negócios.
+- **Recursos Insuficientes para Alta Demanda**: Equipes pequenas enfrentam sobrecarga devido à alta demanda por relatórios e insights.
+- **Falta de Tempo para Conexão de Dados**: A integração de diferentes fontes de dados exige tempo e recursos significativos.
+- **Colaboração Interdepartamental Insuficiente**: Estruturas organizacionais tradicionais dificultam a integração de informações e a colaboração eficiente.
+- **Tensões Entre Demandas Globais e Locais**: Empresas multinacionais precisam equilibrar análises centralizadas com a demanda por entendimento local do mercado.
+
+## O Papel Estratégico da Inteligência Artificial
+- **Automatização da Análise de Dados**: A IA permite a automação de processos de coleta e análise de dados, reduzindo o tempo necessário para gerar insights.
+- **Integração de Dados de Diversas Fontes**: Ferramentas de IA podem consolidar dados de diferentes fontes em uma plataforma única.
+- **Análise em Tempo Real**: A IA permite a análise de dados em tempo real, facilitando respostas rápidas a mudanças no mercado.
+- **Precisão e Redução de Erros**: A automação reduz a probabilidade de erros e inconsistências na análise de dados.
+- **Facilitação da Colaboração**: A IA promove a colaboração interdepartamental ao centralizar dados e insights.
+- **Personalização para Mercado Local**: A IA pode ser ajustada para atender às especificidades de mercados locais.
+ 
 ## Aplicações da IA: Exemplos práticos em diferentes setores
 
 ## Futuro da IA: Possíveis desenvolvimentos e impactos
