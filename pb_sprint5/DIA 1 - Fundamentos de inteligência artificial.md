@@ -1,3 +1,231 @@
+# DIA 1 - Fundamentos de Inteligência Artificial: Introdução
+
+# 1 - CHATGPT:
+
+- **Descrição**: Modelo de linguagem gerado usando IA.
+- **Função Principal**: IA generativa que pode gerar texto coerente e lógico com base nas informações fornecidas.
+- **Imitação da Conversação Humana**: Organiza informações recebidas de bilhões de documentos, livros, Wikipedia, fontes confiáveis na web e fontes proprietárias.
+- **Multimodalidade**: Capacidade de aceitar entradas de texto, upload de arquivos e comunicação por voz.
+
+## GPT 400 (Omni)
+- **Lançamento**: Modelo lançado este ano.
+- **Melhorias Anuais**: Tornado mais rápido e mais barato a cada ano.
+- **Multimodalidade**: Suporte para entrada de texto, upload de arquivos, comunicação por voz, criação de desenhos e análise de conteúdo.
+
+## Google Gemini
+- **Descrição**: Anteriormente conhecido como Google Bard, agora chamado Gemini.
+- **Desenvolvimento**: Criado pela empresa DeepMind do Google.
+- **Funcionalidades**: Capaz de criar podcasts e vídeos ao vivo, com áudio de alta qualidade.
+
+## Anthropic Cloud
+- **Modelo**: Cloud 3.5.
+- **Acesso**: Disponível gratuitamente com um plano gratuito.
+- **Competitividade**: Empresas mantêm suas inovações em segredo devido à alta competitividade.
+
+## Modelos de Código Aberto
+- **Exemplos**: Lamda do Facebook, disponível como opção de código aberto.
+- **Comunidade**: Hugging Face é um site popular para modelos de código aberto, com competições e uma grande comunidade.
+
+## Amazon Titan
+- **Serviço**: Modelo de base dentro do Amazon AWS.
+- **Acesso**: Permite acesso a modelos de linguagem por meio do serviço AWS.
+
+# 2 - O que ele pode fazer?
+
+## Responder Perguntas
+- **Capacidade**: Entender perguntas ou declarações em linguagem natural e responder logicamente.
+- **Exemplo**: Perguntar "Quem é amplamente considerado o melhor guitarrista de rock do século XX?" e obter uma resposta lógica.
+
+## Conversação
+- **Interatividade**: Capaz de manter uma conversa contínua, lembrando-se do contexto anterior dentro da mesma sessão.
+- **Exemplo**: Continuar uma conversa sobre guitarristas sem precisar repetir informações.
+
+## Escrita Criativa
+- **Poesia**: Escrever haicais e outros tipos de poemas.
+- **Redações**: Criar redações explicativas sobre diversos tópicos.
+- **Roteiros**: Escrever roteiros para vídeos do YouTube.
+- **Letras de Música**: Compor letras de músicas.
+- **E-mails e Cartas**: Redigir e-mails e cartas pessoais ou profissionais.
+
+## Brainstorming e Pesquisa
+- **Ideias**: Gerar listas de ideias e pontos para vídeos, artigos, etc.
+- **Resumos**: Resumir textos longos em pontos principais.
+
+## Codificação
+- **Linguagens de Programação**: Escrever código em PHP, Python, C#, entre outras.
+- **Tradução de Idiomas**: Traduzir textos entre diferentes idiomas.
+
+## Cálculos e Resolução de Problemas
+- **Matemática**: Resolver equações algébricas e outros problemas matemáticos.
+- **Verificação**: Necessidade de verificação humana para garantir a precisão das respostas.
+
+# 3 - Comparação de Chatbots
+
+## ChatGPT
+- **Evolução**: O ChatGPT evoluiu de respostas definitivas para respostas mais equilibradas e subjetivas.
+- **Exemplo**: Pergunta sobre o melhor guitarrista de rock do século XX.
+  - GPT-3.5: Resposta definitiva mencionando Jimi Hendrix.
+  - GPT-4: Resposta mais longa e equilibrada, mencionando vários guitarristas e destacando a subjetividade da opinião.
+
+## Google Gemini
+- **Respostas Detalhadas**: Fornece respostas detalhadas com biografias e contextos.
+- **Exemplo**: Resposta sobre o melhor guitarrista de rock do século XX.
+  - Resposta: Menciona Jimi Hendrix e fornece detalhes sobre sua vida e carreira.
+
+## Bing
+- **Modelo Baseado na OpenAI**: Utiliza a tecnologia de linguagem da OpenAI.
+- **Respostas Combinadas**: Fornece várias listas e uma resposta final.
+- **Exemplo**: Resposta sobre o melhor guitarrista de rock do século XX.
+  - Resposta: Menciona vários guitarristas e destaca Jimi Hendrix.
+
+## Anthropic Cloud
+- **Modelo Cloud 3.5**: Disponível gratuitamente com um plano gratuito.
+- **Competitividade**: Empresas mantêm suas inovações em segredo devido à alta competitividade.
+
+# 4 - Comparação de Respostas
+
+## Pergunta sobre o Melhor Guitarrista de Rock do Século XX
+- **ChatGPT GPT-3.5**: Resposta definitiva mencionando Jimi Hendrix.
+- **ChatGPT GPT-4**: Resposta equilibrada mencionando vários guitarristas.
+- **Google Gemini**: Resposta detalhada com biografia de Jimi Hendrix.
+- **Bing**: Resposta combinada mencionando vários guitarristas e destacando Jimi Hendrix.
+
+## Pergunta sobre Demonstrações Revolucionárias de Tecnologia
+- **ChatGPT GPT-3.5**: Menciona a interface gráfica do usuário e a demonstração da Internet.
+- **ChatGPT GPT-4**: Menciona a interface gráfica do usuário e a IA.
+- **Google Gemini**: Menciona o mouse e a interface gráfica do usuário.
+- **Bing**: Menciona o Windows e a IA.
+
+## Limitações dos Chatbots
+- **Atualização de Dados**: As respostas podem variar dependendo do momento em que os modelos foram treinados.
+- **Precisão**: As respostas podem ser criativas, mas também podem estar erradas ou desatualizadas.
+- **Subjetividade**: Algumas respostas podem ser ambíguas ou baseadas em preferências pessoais.
+
+# 5 - Limitações do ChatGPT
+
+## Limitações de Atualização
+- **Dados Desatualizados**: O ChatGPT não está necessariamente atualizado sobre os últimos eventos ou informações globais.
+  - GPT-3.5: Atualizado até janeiro de 2022.
+  - GPT-4: Atualizado até abril de 2023.
+- **Acesso a Dados em Tempo Real**: Não possui acesso a dados em tempo real, o que limita a precisão das respostas sobre eventos recentes.
+
+## Respostas Subjetivas
+- **Indecisão**: Às vezes, o ChatGPT se recusa a responder perguntas subjetivas ou controversas.
+  - Exemplo: Pergunta sobre os piores presidentes dos EUA.
+- **Evolução**: O GPT-4 oferece respostas mais definitivas em comparação com versões anteriores.
+
+## Restrições de Conteúdo
+- **Limitações Éticas**: O ChatGPT não ajuda em atividades ilegais, prejudiciais ou que violem a privacidade.
+  - Exemplo: Recusa-se a reformular uma redação para evitar plágio.
+- **Orientação Médica, Jurídica ou Financeira**: Não oferece conselhos nessas áreas.
+
+## Precisão das Respostas
+- **Confiança Imprecisa**: O ChatGPT pode fornecer respostas erradas com confiança.
+  - Exemplo: Interpretação incorreta da frase "two tends to score" de William Shakespeare.
+- **Correção de Erros**: Pode corrigir respostas erradas quando confrontado com informações corretas.
+
+## Limitações de Interatividade
+- **Falta de Perguntas de Acompanhamento**: O ChatGPT não faz perguntas adicionais para obter mais contexto antes de responder.
+  - Exemplo: Não pergunta sobre detalhes pessoais antes de fornecer uma resposta.
+
+## Limitações de Comprimento
+- **Comprimento Máximo de Entrada e Saída**: Há limites para o número de palavras ou tokens que podem ser processados.
+  - GPT-3: Limite de 2.000 palavras na entrada e 1.000 palavras na saída.
+- **Limites de Solicitações**: Restrições no número de solicitações por minuto e por dia, mesmo para usuários pagos.
+
+# 6 - Funcionamento do ChatGPT
+
+## Aprendizado de Máquina (ML) e Inteligência Artificial (IA)
+- **Definições**:
+  - **Aprendizado de Máquina (ML)**: Subconjunto da IA onde computadores são treinados com base em dados para realizar tarefas específicas.
+  - **Inteligência Artificial (IA)**: Ciência da computação que permite que computadores realizem tarefas que normalmente exigem inteligência humana, como visão, fala, tomada de decisões e tradução de idiomas.
+
+## Modelos de Aprendizado de Máquina
+- **Treinamento Supervisionado e Não Supervisionado**:
+  - **Supervisionado**: Computadores são treinados com dados rotulados.
+  - **Não Supervisionado**: Computadores encontram padrões em dados não rotulados.
+- **Exemplos de Aplicações**:
+  - Mecanismo de Recomendação da Netflix: Previsão de programas que os usuários gostariam de assistir com base em seu histórico de visualização.
+  - Previsão de Pontuação de Crédito: Modelos que preveem a pontuação de crédito com base em dados demográficos e financeiros.
+
+## Reconhecimento e Previsão
+- **Reconhecimento Facial**: Identificação de rostos e comparação com celebridades.
+- **Reconhecimento de Objetos**: Identificação de objetos em imagens, como camisas de botão.
+- **Autocompletar**: Previsão da próxima palavra ou frase em mecanismos de busca.
+
+## Processamento de Linguagem Natural (PNL)
+- **Definição**: Campo da IA que treina computadores para interpretar, entender e gerar linguagem humana.
+- **Aplicações**:
+  - Tradução de Idiomas: Serviços como Google Translate que traduzem texto de um idioma para outro.
+  - ChatGPT: Modelo de transformador generativo pré-treinado (GPT) que imita a conversação humana.
+
+## Transformador Generativo Pré-Treinado (GPT)
+- **Definição**: Modelo de aprendizado de máquina que gera texto com base no contexto fornecido.
+- **Treinamento**:
+  - **Corpus de Texto**: Treinado em centenas de bilhões de palavras de texto humano.
+  - **Conjuntos de Dados**: Inclui rastreamento comum da web, Web Text, corpos de livros e Wikipedia.
+  - **Tokens**: Unidades de texto usadas no treinamento, com 410 bilhões de tokens no GPT-3.
+
+## Funcionamento do ChatGPT
+- **Interface de Usuário**: A interface do ChatGPT é uma camada adicional sobre o modelo GPT-3, permitindo interação com os usuários.
+- **Previsão de Texto**: Gera texto com base no contexto e nas informações fornecidas pelo usuário.
+
+
+# 7 - Uma Visão Mais Ampla
+
+## Treinamento do Modelo
+- **Fontes de Dados:** O modelo foi treinado em diversas fontes, incluindo páginas da web, livros e a Wikipédia.
+- **Custo de Treinamento:** Estima-se que o custo de treinamento varie entre **US$ 1 milhão** e **US$ 10 milhões** em capacidade de computação.
+- **Atualizações:** O modelo não recebeu atualizações desde setembro de 2021 devido ao alto custo de treinamento.
+
+## Entendendo os Prompts
+- **Interpretação de Palavras:** O modelo precisa compreender o significado das palavras e frases, incluindo as mais complexas.
+- **Transformação em Números:** As palavras são convertidas em matrizes numéricas que servem como entrada para o algoritmo.
+
+## Natureza Não Determinística
+- **Respostas Variáveis:** O modelo pode gerar respostas ligeiramente diferentes para a mesma pergunta em ocasiões diferentes.
+- **Controle de Aleatoriedade:** É possível ajustar a aleatoriedade das respostas usando a API do GPT-3.
+
+## Desalinhamento
+- **Conflitos de Informação:** O modelo pode encontrar informações conflitantes durante seu treinamento.
+- **Super-representação e Sub-representação:** Alguns temas podem ser amplificados ou negligenciados.
+- **Respostas Inúteis ou Erradas:** Em alguns casos, o modelo pode fornecer respostas imprecisas ou sem utilidade.
+
+## Preconceitos e Conteúdo Nocivo
+- **Preconceitos Humanos:** O modelo pode refletir os preconceitos presentes nos textos usados para seu treinamento.
+- **Conteúdo Nocivo:** É possível que o modelo gere respostas com preconceitos racistas, sexistas ou misóginos.
+
+## Aprendizado por Reforço com Feedback Humano (RLHF)
+- **Treinamento Adicional:** A OpenAI utiliza treinamento baseado em feedback humano para mitigar desalinhamentos.
+- **Ética em IA:** A ética no desenvolvimento de IA é um campo emergente, e o modelo é projetado para evitar controvérsias.
+
+# 8 - Impactos e Casos de Uso
+
+## Manchetes e Exames
+- **Exames Acadêmicos:** O ChatGPT foi testado em exames de direito, negócios e medicina.
+  - **Certificação:** O modelo foi aprovado em vários exames e, teoricamente, poderia ser certificado como médico, advogado ou MBA.
+  - **Limitação:** Apesar disso, o modelo não é adequado para tarefas práticas, como realizar cirurgias.
+
+## Uso em Lição de Casa
+- **Uso por Estudantes:** Muitos estudantes utilizam o ChatGPT para resolver questões de lição de casa.
+  - **Estatísticas:** Aproximadamente 25% dos professores identificaram ao menos um caso de trapaça envolvendo o ChatGPT.
+  - **Preocupações:** Isso levanta questões sobre integridade acadêmica e honestidade.
+
+## Impacto no Emprego
+- **Preocupações com o Emprego:** Há receios de que o ChatGPT e outros modelos de IA substituam empregos que exigem conhecimento especializado.
+  - **Comparação com Robôs:** Assim como robôs substituíram empregos na indústria, há temores de que computadores substituam empregos baseados em conhecimento.
+
+## Uso no Ambiente de Trabalho
+- **Uso Oculto:** Muitos funcionários utilizam o ChatGPT em seus escritórios sem informar seus superiores.
+  - **Estatísticas:** 68% dos usuários do GPT admitem esconder isso de seus chefes.
+  - **Benefícios:** O ChatGPT ajuda a realizar tarefas de forma mais eficiente, rápida e prática.
+  - **Questões Éticas:** Existe um debate sobre a moralidade de usar o ChatGPT sem informar os gestores.
+
+## Adoção e Futuro
+- **Adoção Generalizada:** Quase 50% dos trabalhadores utilizam o ChatGPT, e dois terços desses não informam seus superiores.
+  - **Permanência:** O ChatGPT veio para ficar, ajudando a melhorar a produtividade e a eficiência no trabalho.
+
+
 # Inteligência Artificial (A Tecnologia que Está Mudando o Mundo) // Dicionário do Programador
 
 # História da Inteligência Artificial: Origem e evolução do termo
