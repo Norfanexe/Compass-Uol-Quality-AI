@@ -1,6 +1,11 @@
 // @ts-check
 const { defineConfig, devices } = require('@playwright/test');
 
+module.exports = defineConfig({
+  testDir: 'C:\Users\Norfa\Desktop\COMPASS NORFAN\trilha-1\tests', // Define o diretório raiz como local dos testes
+  testMatch: '*.spec.js', // Padrão de nome para os arquivos de teste
+})
+
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
