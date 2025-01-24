@@ -1,0 +1,23 @@
+{
+  "name": "trilha-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Norfanexe/trilha-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://gitlab.com/Norfanexe/trilha-1/issues"
+  },
+  "homepage": "https://gitlab.com/Norfanexe/trilha-1#readme",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "@types/node": "^22.10.10"
+  }
+}
