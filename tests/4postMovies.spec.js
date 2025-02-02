@@ -19,6 +19,7 @@ test.describe('Movies API', () => {
     const response = await postRequest(request, `${BASE_URL}/movies`, newMovie);
     
     // Verifica se o status da resposta é 201 (Criado)
+    console.log('Status Code:', response.status());
     expect(response.status()).toBe(201);
   });
 });

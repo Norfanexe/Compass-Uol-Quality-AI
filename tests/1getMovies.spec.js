@@ -7,10 +7,12 @@ test.describe('Movies API', () => {
     const response = await request.get('http://localhost:3000/movies');
     
     // Verifica se o status da resposta é 200 (OK)
+    console.log('Status Code:', response.status());
     expect(response.status()).toBe(200);
     
     // Verifica se o corpo da resposta contém a lista de filmes
     const movies = await response.json();
+    console.log('Response Body:', movies);
     expect(Array.isArray(movies)).toBeTruthy();
     
     // Verifica se cada filme na lista possui as propriedades esperadas

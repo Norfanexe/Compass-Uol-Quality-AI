@@ -22,6 +22,11 @@ test.describe('Movies API', () => {
     const response = await putRequest(request, `${BASE_URL}/movies/${movieId}`, updatedMovie);
     
     // Verifica se o status da resposta é 200 (Atualizado)
+    console.log('Status Code:', response.status());
     expect(response.status()).toBe(200);
+    
+    // Verifica se o corpo da resposta contém os dados do filme atualizado
+    const updatedMovieResponse = await response.json();
+    console.log('Response Body:', updatedMovieResponse);
   });
 });

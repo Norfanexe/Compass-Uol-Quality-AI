@@ -13,6 +13,11 @@ test.describe('Movies API', () => {
     const deleteResponse = await deleteRequest(request, `${BASE_URL}/movies/${movieId}`);
     
     // Verifica se o status da resposta é 200 (Deletado)
+    console.log('Status Code:', deleteResponse.status());
     expect(deleteResponse.status()).toBe(200);
+    
+    // Verifica se o corpo da resposta contém os dados do filme deletado
+    const deletedMovieResponse = await deleteResponse.json();
+    console.log('Response Body:', deletedMovieResponse);
   });
 });
