@@ -1,11 +1,11 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const { getRequest, deleteRequest } = require('../utils/moviesUtils');
+const { getRequest, getMovieById, validateMovieProperties } = require('../utils/moviesUtils');
 
 const BASE_URL = 'http://localhost:3000';
 
 test.describe('Movies API', () => {
-  test('DELETE /movies/{id} - Deleta um filme', async ({ request }) => {
+  test('GET /movies/{id} - Lista um filme com sucesso', async ({ request }) => {
     const movieIds = [];
     
     // Obtém filmes existentes
@@ -30,18 +30,14 @@ test.describe('Movies API', () => {
     const movieId = movieIds[Math.floor(Math.random() * movieIds.length)];
     console.log('Selected Movie ID:', movieId);
 
-    // Envia a requisição DELETE para deletar o filme
-    const deleteResponse = await deleteRequest(request, `${BASE_URL}/movies/${movieId}`);
-    console.log('DELETE Response Status:', deleteResponse.status());
-    expect(deleteResponse.status()).toBe(200);
-    
-    // Verifica se o corpo da resposta contém os dados do filme deletado, se houver
-    const responseBody = await deleteResponse.text();
-    if (responseBody) {
-      const deletedMovieResponse = JSON.parse(responseBody);
-      console.log('Response Body:', JSON.stringify(deletedMovieResponse, null, 2));
-    } else {
-      console.log('Response Body is empty');
-    }
+    // Obtém os detalhes do filme pelo ID
+    const getMovieResponse = await request.get(`${BASE_URL}/movies/${movieId}`);
+    console.log('GET Movie Response Status:', getMovieResponse.status());
+    expect(getMovieResponse.status()).toBe(200);
+
+    const movie = await getMovieResponse.json();
+    console.log('GET Movie Response Body:', JSON.stringify(movie, null, 2));
+
+    validateMovieProperties(movie, movieId);
   });
 });
