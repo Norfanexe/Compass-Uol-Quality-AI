@@ -92,7 +92,7 @@ test.describe('Movies API', () => {
     console.log(`Enviando requisição DELETE para /movies/${movieId}`);
     const deleteResponse = await deleteRequest(request, `${BASE_URL}/movies/${movieId}`);
     console.log('DELETE Response Status:', deleteResponse.status());
-    expect(deleteResponse.status()).toBe(200);
+    expect(deleteResponse.status()).toBe(204);
 
     // Verifica se o filme foi realmente deletado
     console.log(`Verificando se o filme com ID ${movieId} foi deletado`);
