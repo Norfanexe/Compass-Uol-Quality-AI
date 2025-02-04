@@ -10,6 +10,7 @@ test.describe('Movies API - Performance Tests', () => {
     const movieIds = [];
     
     // Obtém filmes existentes
+    console.log('Enviando requisição GET para /movies');
     const getMoviesResponse = await request.get(`${BASE_URL}/movies`);
     console.log('GET Movies Response Status:', getMoviesResponse.status());
     expect(getMoviesResponse.status()).toBe(200);
@@ -18,6 +19,7 @@ test.describe('Movies API - Performance Tests', () => {
     console.log('GET Movies Response Body:', movies);
 
     // Seleciona 50 filmes para serem atualizados
+    console.log('Selecionando 50 filmes para atualização');
     for (let i = 0; i < 50; i++) {
       if (movies[i]) {
         movieIds.push(movies[i]._id);
@@ -27,6 +29,7 @@ test.describe('Movies API - Performance Tests', () => {
     const startTime = Date.now();
 
     // Envia 50 requisições PUT para atualizar os filmes em paralelo
+    console.log('Enviando 50 requisições PUT para atualizar os filmes');
     const promises = [];
     for (const movieId of movieIds) {
       const updatedMovie = {
@@ -48,6 +51,7 @@ test.describe('Movies API - Performance Tests', () => {
           console.log('PUT Response Body:', responseBody);
           if (responseBody) {
             // Verifica se o filme foi atualizado corretamente
+            console.log(`Verificando atualização do filme com ID ${movieId}`);
             const getResponse = await request.get(`${BASE_URL}/movies/${movieId}`);
             console.log('GET Response Status:', getResponse.status());
             expect(getResponse.status()).toBe(200);

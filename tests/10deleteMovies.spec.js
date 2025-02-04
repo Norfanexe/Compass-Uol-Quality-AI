@@ -5,10 +5,9 @@ const { getRequest, deleteRequest } = require('../utils/moviesUtils');
 const BASE_URL = 'http://localhost:3000';
 
 test.describe('Movies API', () => {
-  test('DELETE /movies/{id} - Deleta um filme', async ({ request }) => {
-    const movieIds = [];
-    
-    // Obtém filmes existentes
+  test('DELETE /movies/{id} - Deleta um filme aleatório', async ({ request }) => {
+    // Obtém a lista de filmes existentes
+    console.log('Enviando requisição GET para /movies');
     const getMoviesResponse = await request.get(`${BASE_URL}/movies`);
     console.log('GET Movies Response Status:', getMoviesResponse.status());
     expect(getMoviesResponse.status()).toBe(200);
@@ -16,21 +15,19 @@ test.describe('Movies API', () => {
     const movies = await getMoviesResponse.json();
     console.log('GET Movies Response Body:', JSON.stringify(movies, null, 2));
 
-    // Seleciona IDs dos filmes
-    for (const movie of movies) {
-      movieIds.push(movie._id);
-    }
-
-    // Verifica se há IDs de filmes disponíveis
-    if (movieIds.length === 0) {
+    // Verifica se há filmes disponíveis
+    if (movies.length === 0) {
+      console.error('Nenhum filme encontrado.');
       throw new Error('Nenhum filme encontrado.');
     }
 
     // Seleciona um ID de filme aleatório da lista
-    const movieId = movieIds[Math.floor(Math.random() * movieIds.length)];
+    const randomIndex = Math.floor(Math.random() * movies.length);
+    const movieId = movies[randomIndex]._id;
     console.log('Selected Movie ID:', movieId);
 
     // Envia a requisição DELETE para deletar o filme
+    console.log(`Enviando requisição DELETE para /movies/${movieId}`);
     const deleteResponse = await deleteRequest(request, `${BASE_URL}/movies/${movieId}`);
     console.log('DELETE Response Status:', deleteResponse.status());
     expect(deleteResponse.status()).toBe(200);

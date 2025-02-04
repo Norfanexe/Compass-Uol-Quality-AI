@@ -16,4 +16,16 @@ async function postRequest(request, endpoint, data) {
   return response;
 }
 
-module.exports = { postRequest };
+/**
+ * Envia uma requisição GET para listar todos os tickets.
+ * @param {object} request - Objeto de requisição do Playwright.
+ * @param {string} endpoint - Endpoint para enviar a requisição.
+ * @returns {Promise<object>} - Resposta da API.
+ */
+async function getRequest(request, endpoint) {
+  const response = await request.get(endpoint);
+  expect(response.status()).toBe(200);
+  return response.json();
+}
+
+module.exports = { postRequest, getRequest };

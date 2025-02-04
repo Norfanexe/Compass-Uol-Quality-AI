@@ -9,6 +9,7 @@ test.describe('Movies API - Performance Tests', () => {
     const movieIds = [];
     
     // Obtém filmes existentes
+    console.log('Enviando requisição GET para /movies');
     const getMoviesResponse = await request.get(`${BASE_URL}/movies`);
     console.log('GET Movies Response Status:', getMoviesResponse.status());
     expect(getMoviesResponse.status()).toBe(200);
@@ -17,6 +18,7 @@ test.describe('Movies API - Performance Tests', () => {
     console.log('GET Movies Response Body:', movies);
 
     // Seleciona 30 filmes para serem deletados
+    console.log('Selecionando 30 filmes para exclusão');
     for (let i = 0; i < 30; i++) {
       if (movies[i]) {
         movieIds.push(movies[i]._id);
@@ -26,6 +28,7 @@ test.describe('Movies API - Performance Tests', () => {
     const startTime = Date.now();
 
     // Envia 30 requisições DELETE para deletar os filmes em paralelo
+    console.log('Enviando 30 requisições DELETE para excluir os filmes');
     const promises = [];
     for (const movieId of movieIds) {
       const promise = request.delete(`${BASE_URL}/movies/${movieId}`)
@@ -35,7 +38,7 @@ test.describe('Movies API - Performance Tests', () => {
           return response.text(); // Lê a resposta como texto
         })
         .then(responseBody => {
-          console.log('DELETE Response Body:', responseBody);
+          console.log('Filme Deletado', responseBody);
         })
         .catch(error => {
           console.error('Erro na requisição:', error);
