@@ -256,9 +256,192 @@ Isso garante que a aplicação tenha sempre a capacidade necessária sem desperd
 
 Com essas funcionalidades, empresas podem melhorar seu desempenho e reduzir custos operacionais, garantindo sempre a melhor experiência para os clientes.
 
-
 # 5 - Direcionamento de tráfego com o Elastic Load Balancing
+
+O balanceamento de carga é essencial para garantir que as solicitações dos clientes sejam distribuídas uniformemente entre as instâncias do Amazon EC2, evitando gargalos e melhorando a eficiência da infraestrutura. O Elastic Load Balancing (ELB) é o serviço da AWS projetado para gerenciar esse balanceamento de forma automática e escalável.
+
+## Problema: Distribuição Desigual de Tráfego
+
+Imagine uma cafeteria onde os clientes podem escolher entre três caixas para fazer seus pedidos. Se a maioria dos clientes se alinha em apenas uma fila, isso causa uma distribuição desigual da carga de trabalho, resultando em filas demoradas enquanto outras caixas ficam ociosas.
+
+No ambiente da AWS, quando existem várias instâncias do EC2 executando o mesmo programa, o desafio é garantir que as solicitações sejam distribuídas igualmente entre elas. Sem um balanceador de carga, algumas instâncias podem ficar sobrecarregadas enquanto outras permanecem subutilizadas.
+
+## Solução: Elastic Load Balancing (ELB)
+
+O ELB atua como um anfitrião que direciona cada solicitação para a instância EC2 mais apropriada. Isso garante que nenhuma instância fique sobrecarregada enquanto outras estão ociosas.
+
+### Benefícios do ELB:
+
+- **Alta disponibilidade:** Funciona a nível regional, garantindo que o tráfego seja distribuído de forma eficiente.
+- **Escalabilidade automática:** Ajusta-se conforme a demanda, sem necessidade de intervenção manual.
+- **Otimização do desempenho:** Direciona solicitações para instâncias com menor carga.
+- **Redução de custos:** Permite um uso mais eficiente dos recursos, evitando desperdício de capacidade.
+
+## Integração com Auto Scaling
+
+O ELB trabalha em conjunto com o Amazon EC2 Auto Scaling. Quando novas instâncias são adicionadas devido ao aumento da demanda, o ELB automaticamente as reconhece e começa a direcionar tráfego para elas. Da mesma forma, quando a demanda diminui e instâncias são removidas, o ELB redireciona o tráfego para as instâncias restantes antes do encerramento.
+
+## Balanceamento de Carga Interno
+
+O ELB não é útil apenas para balanceamento de carga externo (clientes acessando seu serviço), mas também para comunicação entre serviços internos. Ele pode gerenciar o tráfego entre camadas diferentes de uma aplicação, facilitando a escalabilidade e a manutenção.
+
+## Exemplo Prático
+
+### Período de Baixa Demanda:
+
+- Poucos clientes acessam a cafeteria (serviço).
+- Apenas algumas caixas (instâncias EC2) estão ativas.
+- O ELB distribui as solicitações igualmente entre as caixas abertas.
+
+### Período de Alta Demanda:
+
+- O número de clientes aumenta.
+- Mais caixas são abertas automaticamente (Auto Scaling adiciona instâncias EC2).
+- O ELB direciona os clientes para a caixa menos ocupada, garantindo um atendimento eficiente.
 
 # 6 - Mensagens e enfileiramento
 
+O conceito de mensagens e filas é fundamental para arquiteturas escaláveis e confiáveis. Podemos ilustrar esse conceito com uma situação em uma cafeteria: o caixa anota o pedido e entrega diretamente ao barista. Esse método funciona, mas quando o barista está ocupado, o caixa precisa esperar. Esse problema pode ser resolvido com um buffer ou fila de pedidos.
+
+A ideia central de mensagens e enfileiramento é armazenar mensagens temporariamente até que possam ser processadas. Isso permite desacoplar componentes do sistema, tornando a arquitetura mais resiliente.
+
+## Acoplamento Forte vs. Acoplamento Fraco
+
+### Acoplamento Forte
+
+Em arquiteturas fortemente acopladas, os componentes dependem uns dos outros diretamente. Se um componente falha, outros também podem falhar. Por exemplo:
+
+- O Aplicativo A envia mensagens diretamente para o Aplicativo B.
+- Se o Aplicativo B falhar, o Aplicativo A também apresentará erros.
+
+### Acoplamento Fraco
+
+Em uma arquitetura fracamente acoplada, os componentes funcionam independentemente. A introdução de uma fila de mensagens permite que o Aplicativo A continue enviando mensagens mesmo que o Aplicativo B esteja temporariamente indisponível.
+
+## Amazon SQS e Amazon SNS
+
+### Amazon Simple Queue Service (SQS)
+
+O Amazon SQS é um serviço de enfileiramento de mensagens que permite enviar, armazenar e receber mensagens de forma assíncrona.
+
+#### Vantagens:
+- Escalabilidade automática.
+- Armazena mensagens até que possam ser processadas.
+- Reduz o acoplamento entre serviços.
+
+#### Funcionamento:
+- O Aplicativo A envia mensagens para uma fila do SQS.
+- As mensagens permanecem na fila até que o Aplicativo B as processe.
+- O Aplicativo B recupera, processa e remove a mensagem da fila.
+
+### Amazon Simple Notification Service (SNS)
+
+O Amazon SNS é um serviço de notificação baseado em publicação/assinatura (pub/sub). Permite que mensagens sejam enviadas a múltiplos assinantes simultaneamente.
+
+#### Exemplo de Uso:
+- Um tópico SNS pode ser criado para enviar mensagens a diferentes assinantes, como funções AWS Lambda, e-mails ou filas SQS.
+- Um cliente pode assinar apenas os tópicos que deseja receber.
+
+## Aplicativos Monolíticos vs. Microsserviços
+
+### Arquitetura Monolítica
+- Todos os componentes estão fortemente acoplados.
+- Se um componente falhar, todo o sistema pode falhar.
+
+### Arquitetura de Microsserviços
+- Cada componente é independente.
+- Se um componente falhar, os outros continuam funcionando.
+- Pode-se utilizar SQS e SNS para integração eficiente.
+
+## Casos Práticos
+
+### Exemplo 1: Sem Fila (Acoplamento Forte)
+- O caixa recebe um pedido e entrega diretamente ao barista.
+- Se o barista estiver ocupado, o caixa precisa esperar.
+
+### Exemplo 2: Com Fila (Acoplamento Fraco)
+- O caixa recebe um pedido e coloca na fila.
+- O barista pega o pedido da fila e o processa quando estiver livre.
+- O fluxo continua sem interrupção, independentemente da disponibilidade do barista.
+
+## Resumo
+- O uso de filas (SQS) desacopla os sistemas, tornando-os mais resilientes.
+- O SNS permite notificações eficientes para múltiplos destinatários.
+- Arquiteturas desacopladas evitam falhas em cascata e melhoram a escalabilidade.
+- A implementação de SQS e SNS na AWS é essencial para construir sistemas escaláveis e confiáveis. Adotar uma abordagem baseada em microsserviços aumenta a disponibilidade e a robustez das aplicações modernas.
+
 # 7 - Serviços de computação adicionais
+ 
+As instâncias do EC2 (Elastic Compute Cloud) são máquinas virtuais que podem ser provisionadas rapidamente para atender às necessidades computacionais dos usuários na AWS. O EC2 é utilizado para diversos casos, desde servidores web básicos até clusters de alta performance.
+
+## Características do EC2
+
+- **Flexibilidade:** Permite a escolha de vários tipos de instâncias e configurações.
+- **Escalabilidade:** Capacidade de aumentar ou reduzir a quantidade de instâncias conforme a demanda.
+- **Responsabilidade do Usuário:** Gerenciamento das instâncias, atualizações de software, escalabilidade e disponibilidade.
+
+## Alternativas ao EC2
+
+Embora o EC2 seja poderoso, existem alternativas que podem reduzir a necessidade de gerenciamento direto da infraestrutura. Essas alternativas incluem serviços serverless e conteinerização.
+
+## Computação Serverless
+
+### Conceito de Serverless
+
+A computação serverless permite a execução de aplicações sem a necessidade de gerenciar servidores subjacentes. A AWS cuida automaticamente do provisionamento, dimensionamento, alta disponibilidade e manutenção do ambiente.
+
+### AWS Lambda
+
+O AWS Lambda é um serviço serverless que executa código em resposta a eventos.
+
+#### Como funciona o AWS Lambda?
+
+- O usuário faz upload do código para o Lambda.
+- Define um gatilho para acionar a função.
+- Quando acionado, o código é executado automaticamente.
+- O custo é baseado no tempo de execução e na quantidade de execuções.
+
+### O AWS Lambda é ideal para:
+
+- Back-end de aplicações web.
+- Processamento de eventos.
+- Automatisção de tarefas na nuvem.
+
+## Computação baseada em Contêineres
+
+### Conceito de Contêineres
+
+Os contêineres permitem empacotar aplicações e suas dependências de forma isolada e portátil, garantindo consistência no ambiente de execução.
+
+### Serviços de Orquestração de Contêineres
+
+Para gerenciar contêineres em larga escala, a AWS oferece serviços de orquestração:
+
+#### Amazon ECS (Elastic Container Service)
+
+- Gerenciamento simplificado de contêineres.
+- Suporte ao Docker.
+- Integração com AWS Fargate para execução serverless de contêineres.
+
+#### Amazon EKS (Elastic Kubernetes Service)
+
+- Gerenciamento de Kubernetes na AWS.
+- Permite executar contêineres em escala utilizando Kubernetes.
+- Mantido pela comunidade open-source e integrado à AWS.
+
+### AWS Fargate
+
+O AWS Fargate é uma plataforma serverless para executar contêineres sem a necessidade de gerenciar instâncias do EC2.
+
+#### Benefícios do AWS Fargate
+
+- Sem necessidade de provisionamento de servidores.
+- Escalabilidade automática.
+- Redução da complexidade operacional.
+
+## Escolhendo a Melhor Opção para seu Caso de Uso
+
+- Precisa de controle total sobre o ambiente? Use o Amazon EC2.
+- Deseja executar código sem gerenciar infraestrutura? Use o AWS Lambda.
+- Precisa de um ambiente de conteinerização gerenciado? Escolha Amazon ECS ou Amazon EKS.
+- Quer evitar a gestão de servidores para contêineres? Opte pelo AWS Fargate.
