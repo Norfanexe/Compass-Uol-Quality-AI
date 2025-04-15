@@ -65,7 +65,7 @@ Gostaria de expressar minha gratidão às seguintes pessoas que me ajudam diaria
 
 ## Contato
 
-- **E-mail**: [Rodrigopereira68467@gmail.com]
+- **E-mail**: [Rodrigo68467@outlook.com]
 - **LinkedIn**: [www.linkedin.com/in/rodrigo-pereira-049465179]
 
 ---
